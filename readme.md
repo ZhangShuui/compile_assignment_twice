@@ -6,6 +6,7 @@ a simple implemention of fibonacci
 The procedure can be divided into two parts 
 - **fobo**: the implemention of Recursive function
 - **main**: the `main` function
+
 other details that need to be mentioned include:
 - the `.global` mark
 - the `.word` mark
@@ -17,5 +18,6 @@ The procedure can be divided into three parts
 - **factorial**: the function that compute factorial
 - **C**: the function that combine the results of factorial, then reach the final result(use div function) 
 - **main**: the `main` function
+
 other details that need to be mentioned include:
 - `__aeabi_idiv`: arm assembly code lacks the `div` instruction, in compensation they have this function to code with the need of divsion.
