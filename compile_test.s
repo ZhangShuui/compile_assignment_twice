@@ -1,11 +1,11 @@
 	.text
 	.section	.rodata
 _str:
-	.ascii	"%d\000"
+	.ascii	"%d\012\000"	@ "%d\n\0"
 	.align	2
 	.global	fibo
 fibo:	@ function int fibo(int)
-	push	{r4, fp, lr}
+	push	{fp, lr}
 	add	fp, sp, #8
 	sub	sp, sp, #12
 	str	r0, [fp, #-16]
@@ -33,7 +33,7 @@ fibo:	@ function int fibo(int)
 .L3:
 	mov	r0, r3
 	sub	sp, fp, #8
-	pop	{r4, fp, pc}
+	pop	{fp, pc}
 
 	.align	2
 	.global	main

@@ -1,6 +1,6 @@
 .PHONY:test,clean
 test:
-	arm-linux-gnueabihf-gcc compile_test2.s -o compile_test2
-	qemu-arm -L /usr/arm-linux-gnueabihf/ ./compile_test2
+	arm-linux-gnueabihf-gcc compile_test.s -o compile_test
+	qemu-arm -L /usr/arm-linux-gnueabihf/ ./compile_test
 clean:
 	rm -fr gcctest
